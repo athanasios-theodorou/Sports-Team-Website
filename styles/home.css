@@ -1,0 +1,11 @@
+.banner h1 {
+  font-size: clamp(32px, 6vw, 70px);
+}
+
+.banner p {
+  font-size: clamp(14px, 2vw, 18px);
+  margin: 20px auto;
+  font-weight: 300;
+  line-height: 1.6;
+  max-width: 600px;
+}

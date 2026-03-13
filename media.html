@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Media - Miami Heat</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="There are photos of Miami Heat!" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
+    <link rel="stylesheet" href="styles/media.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="scripts/gallery.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="home.html">
+          <img src="images/logo.png" class="logo" alt="Miami Heat Logo" />
+        </a>
+
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="history.html">History</a></li>
+          <li class="active"><a href="media.html">Media</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="showcase">
+      <section class="media-section">
+        <h2>Miami Heat Roster</h2>
+
+        <div class="media-grid">
+          <div class="media-item">
+            <img
+              src="images/butler.jpg"
+              class="hover-shadow cursor"
+              alt="Jimmy Butler"
+            />
+          </div>
+
+          <div class="media-item">
+            <img
+              src="images/adebayo.jpg"
+              class="hover-shadow cursor"
+              alt="Bam Adebayo"
+            />
+          </div>
+
+          <div class="media-item">
+            <img
+              src="images/herro.jpeg"
+              class="hover-shadow cursor"
+              alt="Tyler Herro"
+            />
+          </div>
+
+          <div class="media-item">
+            <img
+              src="images/robinson.jpg"
+              class="hover-shadow cursor"
+              alt="Duncan Robinson"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="media-section">
+        <h2>Through The Lens</h2>
+
+        <div class="media-grid">
+          <div class="media-item">
+            <img
+              src="images/team1.jpeg"
+              class="hover-shadow cursor"
+              alt="Miami Heat vs Lakers"
+            />
+          </div>
+
+          <div class="media-item">
+            <img
+              src="images/team2.jpeg"
+              class="hover-shadow cursor"
+              alt="Miami Heat vs Phoenix Suns"
+            />
+          </div>
+
+          <div class="media-item">
+            <img
+              src="images/finals.jpg"
+              class="hover-shadow cursor"
+              alt="NBA Finals vs Lakers"
+            />
+          </div>
+
+          <div class="media-item">
+            <img
+              src="images/team3.jpg"
+              class="hover-shadow cursor"
+              alt="Miami Heat 2022"
+            />
+          </div>
+        </div>
+      </section>
+
+      <div id="myModal" class="modal">
+        <span class="close cursor">&times;</span>
+
+        <div class="modal-content">
+          <div class="modal-viewer">
+            <div class="mySlides">
+              <div class="numbertext">1 / 8</div>
+              <img src="images/butler.jpg" alt="Jimmy Butler" />
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">2 / 8</div>
+              <img src="images/adebayo.jpg" alt="Bam Adebayo" />
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">3 / 8</div>
+              <img src="images/herro.jpeg" alt="Tyler Herro" />
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">4 / 8</div>
+              <img src="images/robinson.jpg" alt="Duncan Robinson" />
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">5 / 8</div>
+              <img src="images/team1.jpeg" alt="Miami Heat vs Lakers" />
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">6 / 8</div>
+              <img src="images/team2.jpeg" alt="Miami Heat vs Phoenix Suns" />
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">7 / 8</div>
+              <img src="images/finals.jpg" alt="NBA Finals vs Lakers" />
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">8 / 8</div>
+              <img src="images/team3.jpg" alt="Miami Heat 2022" />
+            </div>
+
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+          <div class="modal-thumbnails">
+            <div class="media-item">
+              <img
+                class="demo cursor"
+                src="images/butler.jpg"
+                alt="Jimmy Butler"
+              />
+            </div>
+
+            <div class="media-item">
+              <img
+                class="demo cursor"
+                src="images/adebayo.jpg"
+                alt="Bam Adebayo"
+              />
+            </div>
+
+            <div class="media-item">
+              <img
+                class="demo cursor"
+                src="images/herro.jpeg"
+                alt="Tyler Herro"
+              />
+            </div>
+
+            <div class="media-item">
+              <img
+                class="demo cursor"
+                src="images/robinson.jpg"
+                alt="Duncan Robinson"
+              />
+            </div>
+
+            <div class="media-item">
+              <img
+                class="demo cursor"
+                src="images/team1.jpeg"
+                alt="Miami Heat vs Lakers"
+              />
+            </div>
+
+            <div class="media-item">
+              <img
+                class="demo cursor"
+                src="images/team2.jpeg"
+                alt="Miami Heat vs Phoenix Suns"
+              />
+            </div>
+
+            <div class="media-item">
+              <img
+                class="demo cursor"
+                src="images/finals.jpg"
+                alt="NBA Finals vs Lakers"
+              />
+            </div>
+
+            <div class="media-item">
+              <img
+                class="demo cursor"
+                src="images/team3.jpg"
+                alt="Miami Heat 2022"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2022-2026 Athanasios Theodorou</p>
+    </footer>
+  </body>
+</html>

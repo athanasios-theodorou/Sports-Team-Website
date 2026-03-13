@@ -1,0 +1,80 @@
+/* BANNER */
+.banner {
+  min-height: 100vh;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url(../images/background.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+/* BUTTONS */
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.btn {
+  display: inline-block;
+  min-width: 160px;
+  padding: clamp(10px, 2vw, 15px) clamp(16px, 3vw, 20px);
+  font-size: clamp(14px, 1.5vw, 16px);
+  text-align: center;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #87ceeb;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  z-index: 1;
+}
+
+.btn span {
+  display: none;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #87ceeb;
+  border-radius: 25px;
+  z-index: -1;
+  transition: width 0.5s;
+}
+
+.btn:hover::before {
+  width: 100%;
+}
+
+.btn:hover {
+  border: 2px solid transparent;
+}
+
+/* RESPONSIVE BUTTONS */
+
+@media (max-width: 500px) {
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 80%;
+    max-width: 280px;
+  }
+}
